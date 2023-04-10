@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Calculatrice</title>
+        <link href="style.css" rel="stylesheet" type="text/css" media="all">
+        
+    </head>
+    <body>
+        <!-- calculator -->
+        <div id="calculator">
+            <!-- Screen container -->
+            <div id="screen">
+                <span id="display"></span>
+            </div>
+            <!-- Buttons container -->
+            <div id="panel">
+                <div class="button" onclick="reset()">AC</div>
+                <div class="button" onclick="del()">C</div>
+                <div class="button" onclick="setNegative()">(-)</div>
+                <div class="button" onclick="addOperator('/')">/</div>
+                <div class="button" onclick="addNumber('7')">7</div>
+                <div class="button" onclick="addNumber('8')">8</div>
+                <div class="button" onclick="addNumber('9')">9</div>
+                <div class="button" onclick="addOperator('*')">*</div>
+                <div class="button" onclick="addNumber('4')">4</div>
+                <div class="button" onclick="addNumber('5')">5</div>
+                <div class="button" onclick="addNumber('6')">6</div>
+                <div class="button" onclick="addOperator('-')">-</div>
+                <div class="button" onclick="addNumber('1')">1</div>
+                <div class="button" onclick="addNumber('2')">2</div>
+                <div class="button" onclick="addNumber('3')">3</div>
+                <div class="button" onclick="addOperator('+')">+</div>
+                <div id="zero" class="button" onclick="addNumber('0')">0</div>
+                <div class="button" onclick="pressDot()">.</div>
+                <div class="button" onclick="calculate()">=</div>
+            </div>
+        </div>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

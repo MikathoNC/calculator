@@ -1,0 +1,63 @@
+html, body {
+    background-color:lightgray;
+    display: flex;
+    justify-content: center;
+}
+
+#screen {
+    background-color: aquamarine;
+    display: flex;
+    margin: 1rem;
+    flex:0.3;
+    box-shadow: inset 3px 3px 3px rgb(9, 39, 0);
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#panel {
+    flex:0.7;
+    background-color: lightgray;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 5px;
+    margin: 1rem;
+    text-align: center;
+    justify-content: center;
+}
+
+#calculator {
+    background-color: aliceblue;
+    padding: 5%;
+    height:70vh;
+    display:flex;
+    flex-direction: column;
+    width: 40vw;
+    box-shadow: 10px 10px 10px darkgray;
+    border-radius: 25px;
+}
+
+
+
+/* BUTTONS PLACEMENT */
+
+#zero {
+    grid-column: span 2;
+}
+
+.button{
+    border: 0.2rem solid black;
+    padding: 1rem;
+    background-color: darkgray;
+}
+
+.button:hover {
+    cursor:pointer;
+    filter:brightness(1.2)
+}
+
+.button:active {
+    box-shadow: inset 2px 2px 2px black;
+    filter:brightness(1);
+}
+
